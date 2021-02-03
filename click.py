@@ -1,7 +1,6 @@
 # Libraries
 import keyboard
 import time
-import mouse
 from pynput.mouse import Button, Controller
 
 # Defining
