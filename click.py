@@ -25,9 +25,6 @@ print("Real Click Speed: ",real_clickspd,"(s)")
 
 # Infinite Loop for activation
 while True:
-    #if keyboard.is_pressed('w'):
-    #    print("You pressed W")
-    #    time.sleep(0.05)
 
     # Hold and thou shall click fast
     if keyboard.is_pressed(click):
@@ -43,6 +40,8 @@ while True:
             mouse.press(Button.left)
             mouse.release(Button.left)
             time.sleep(real_clickspd)
+
+            # If you want to stop clicking, press toggle again
             if keyboard.is_pressed(click_toggle):
                 print("Done Clicking")
                 time.sleep(1)
